@@ -8,24 +8,16 @@ class Episodes extends Component {
           return (
             <div className="episodes__container">
               <h4>
-                <a
-                  href="true"
-                  name={`S${episode.season}E${episode.number}`}
-                >
+                <a href={episode.url} name={`S${episode.season}E${episode.number}`}>
                   S{episode.season}E{episode.number}: {episode.name}
                 </a>
               </h4>
-              <a href={episode.url}>
-                <img
-                  src={episode.image ? episode.image.medium : null}
-                  alt=""
-                />
+              <a href={episode.image? episode.image.original: null}>
+                <img src={episode.image ? episode.image.medium : null} alt="" />
               </a>
               <p className="summary__p">
                 {episode.summary
-                  ? episode.summary
-                      .replace(/<p>/g, "")
-                      .replace(/<\/p>/g, "")
+                  ? episode.summary.replace(/<p>/g, "").replace(/<\/p>/g, "")
                   : null}
               </p>
             </div>
