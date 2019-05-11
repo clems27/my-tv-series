@@ -24,8 +24,18 @@ body {
 .App-header {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+   align-items: center;
+  justify-content: center; 
+  width:100%;
+}
+.header__wrapper{
+  width: 100%;
+  margin-top: 0px;
+
+}
+.header__image{
+  width:100%;
+  margin-top: 0px;
 }
 
 .App-link {
@@ -40,15 +50,41 @@ body {
     transform: rotate(360deg);
   }
 }
-.episodes__container{
+.main-container{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
+header{
+  position: fixed;
+}
 .episodeDropdown{
   border: 1px solid black
+}
+.episodes__container{
+  width: 80%;
+}
+.episode__selection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.episode__wrapper{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(70, 68, 66);
+  margin-top: 10px;
+}
+.summary__p{
+  padding: 8px;
+}
+.info__p{
+  color:rgb(47, 63, 207);
+  margin-left:30px;
 }
 .container {
   max-width: 100%;

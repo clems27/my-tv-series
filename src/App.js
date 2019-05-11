@@ -5,9 +5,13 @@ import Heading from "./Heading";
 class App extends Component {
   render() {
     return (
-      <div className="container">
-      <Heading />
-      <Episodes />
+      <div>
+        <div>
+          <Heading />
+        </div>
+        <div className="container">
+          <Episodes />
+        </div>
       </div>
     );
   }
